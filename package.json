@@ -14,7 +14,10 @@
   "devDependencies": {
     "typescript": "^5.0.0",
     "webpack": "^5.0.0",
-    "webpack-cli": "^5.0.0"
+    "webpack-cli": "^5.0.0",
+    "ts-loader": "^9.0.0",
+    "package-a": "workspace:*",
+    "package-b": "workspace:*"
   },
   "keywords": [
     "monorepo",

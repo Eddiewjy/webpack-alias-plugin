@@ -1,28 +1,22 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "module": "commonjs",
-    "declaration": true,
-    "outDir": "dist",
-    "rootDir": "src",
-    "esModuleInterop": true,
+    "target": "ES2020",
+    "module": "ESNext",
     "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "composite": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
     "baseUrl": ".",
     "paths": {
-      "package-b": ["../sdk/src/index.d.ts"],
-      "package-b/utils": ["../sdk/src/utils.d.ts"],
-      "package-b/constants": ["../sdk/src/constants.d.ts"],
-      "package-b/types": ["../sdk/src/types.d.ts"]
+      "@/*": ["src/*"],
+      "@utils/*": ["src/utils/*"],
+      "@constants/*": ["src/constants/*"],
+      "@types/*": ["src/types/*"]
     }
   },
-  "references": [
-    {
-      "path": "../sdk" //引用sdk，sdk的compilerOptions需要配置composite: true
-    }
-  ],
   "include": ["src/**/*"],
   "exclude": ["node_modules", "dist"]
 }

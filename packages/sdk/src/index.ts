@@ -41,5 +41,4 @@ class SDK {
 const sdk = new SDK();
 
 export default sdk;
-export { utils, constants, types };
-export type { SDKData }; 
+export { utils, constants, types }; 

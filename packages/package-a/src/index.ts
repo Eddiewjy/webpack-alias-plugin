@@ -1,6 +1,6 @@
 import { utils } from '@utils/helper';
 import { constants } from '@constants/config';
-import { types } from '@types/interfaces';
+import { types } from '@/types/interfaces';
 
 // 使用别名导入的模块
 console.log('Package A - Main Entry');

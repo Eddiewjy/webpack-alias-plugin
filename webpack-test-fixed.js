@@ -1,11 +1,11 @@
 const path = require('path');
-const typescriptAliasPlugin = require('./plugin');
+const TypescriptAliasPlugin = require('./plugin-fixed');
 
 module.exports = {
   mode: 'development',
   entry: './packages/package-a/src/index.ts',
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'dist-fixed'),
     filename: 'bundle.js',
     clean: true
   },
@@ -29,7 +29,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new typescriptAliasPlugin(__dirname)//手写的动态别名插件
+    new TypescriptAliasPlugin(__dirname)
   ],
   devtool: 'source-map'
 }; 

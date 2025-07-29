@@ -1,1 +1,1 @@
-读取并注册路径别名的一个webpack插件
+一个 monorepo 实现源码引用的方案，包含手写 webpack 处理 alias 的插件

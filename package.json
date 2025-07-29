@@ -1,0 +1,25 @@
+{
+  "name": "my-monorepo",
+  "version": "1.0.0",
+  "description": "A monorepo project with multiple packages",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "dev": "npm run dev --workspaces",
+    "test": "npm run test --workspaces"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "webpack": "^5.0.0",
+    "webpack-cli": "^5.0.0"
+  },
+  "keywords": [
+    "monorepo",
+    "packages"
+  ],
+  "author": "",
+  "license": "MIT"
+}

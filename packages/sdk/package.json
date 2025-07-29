@@ -1,0 +1,40 @@
+{
+  "name": "package-b",
+  "version": "1.0.0",
+  "description": "Package B in monorepo",
+  "main": "src/index.js",
+  "exports": {
+    ".": {
+      "import": "./src/index.js",
+      "require": "./src/index.js",
+      "default": "./src/index.js"
+    },
+    "./utils": {
+      "import": "./src/utils.js",
+      "require": "./src/utils.js",
+      "default": "./src/utils.js"
+    },
+    "./constants": {
+      "import": "./src/constants.js",
+      "require": "./src/constants.js",
+      "default": "./src/constants.js"
+    },
+    "./types": {
+      "import": "./src/types.js",
+      "require": "./src/types.js",
+      "default": "./src/types.js"
+    }
+  },
+  "scripts": {
+    "build": "echo 'Building package-b'",
+    "dev": "echo 'Running package-b in dev mode'",
+    "test": "echo 'Testing package-b'"
+  },
+  "dependencies": {},
+  "keywords": [
+    "package",
+    "monorepo"
+  ],
+  "author": "",
+  "license": "MIT"
+}

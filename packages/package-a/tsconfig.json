@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "declaration": true,
+    "outDir": "dist",
+    "rootDir": "src",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "composite": true,
+    "baseUrl": ".",
+    "paths": {
+      "package-b": ["../sdk/src/index.d.ts"],
+      "package-b/utils": ["../sdk/src/utils.d.ts"],
+      "package-b/constants": ["../sdk/src/constants.d.ts"],
+      "package-b/types": ["../sdk/src/types.d.ts"]
+    }
+  },
+  "references": [
+    {
+      "path": "../sdk" //引用sdk，sdk的compilerOptions需要配置composite: true
+    }
+  ],
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
